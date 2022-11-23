@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.row {
+.rows {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -53,7 +53,7 @@ body {
   }
   
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./HS2.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/Photos/HS2.JPG");
     height: 70%;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,38 +108,40 @@ body {
     padding: 15px;
 }
 
-.viewer {
+.row {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    position: relative;
-    
-}
+    gap: 0.25rem;
+  }
 
- img {
+  .project:first-child {
     width: 100%;
- }
+  }
 
- .imagelist {
-    list-style: none;
-    width: calc(50% - 10px);
+  .project {
     position: relative;
-    
- }
+    width: calc(50% - 0.125rem);
+  }
 
-.piclabel{
-   position:absolute;
-   margin: 10px;
-   padding: 10px;
-    color:white;
-    background-color: blue;
-}
-
- .imagelist:first-child {
+  .project img {
+    height: 100%;
     width: 100%;
- }
+    object-fit: cover;
+    filter: grayscale(0.5);
+  }
+
+  .project img:hover {
+    filter: grayscale(0);
+  }
+
+  .project-label {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    background-color:blueviolet;
+  }
+
 
  footer {
   background-color:lightcoral;
