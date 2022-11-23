@@ -6,6 +6,7 @@ This module challenge was to build my first portfolio from scratch.  During this
 
 ## Links
 https://github.com/Zander-M75/Zanders-Portfolio-V1
+https://zander-m75.github.io/Zanders-Portfolio-V1/
 
 **Project images are temporarily linked to Google until actual portfolio projects are ready* 
 
